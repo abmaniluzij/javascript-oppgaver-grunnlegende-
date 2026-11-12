@@ -304,34 +304,71 @@ for (let i = 1; i <= 15; i++) {
 // Forventet: Tromsø
 //            5
 
+const byer = ["Tromsø", "Bodø", "Alta", "Harstad", "Narvik"];
+byer [0]
+console.log(byer [0]);
+console.log(byer.length);
+
 
 // Oppgave 21 (grunnleggende)
 // Legg til "Hammerfest" med push, og skriv ut den siste byen og det nye antallet.
 // Tips: siste element er byer[byer.length - 1]
 // Forventet: Hammerfest
 //            6
-
+byer.push("Hammerfest");
+console.log(byer [byer.length - 1]);
+console.log(byer.length );
 
 // Oppgave 22 (middels)
 // Skriv ut alle byene med en for-løkke.
 // Forventet: Tromsø, Bodø, Alta, Harstad, Narvik, Hammerfest (én per linje)
-
+for(let i = 0; i < byer.length; i++) {
+   
+    console.log(byer[i]);
+   
+}
 
 // Oppgave 23 (middels)
 // const temperaturer = [-4, -6, -2, 1, -8, -11, -3];
 // Tell hvor mange dager det var kaldere enn -5. Bruk for og if.
 // Forventet: 3
-
-
+const temperaturer = [-4, -6, -2, 1, -8, -11, -3];
+let kaldsdag = 0;
+for (let i = 0; i < temperaturer.length; i++){
+    if (temperaturer[i] <= -5){
+        kaldsdag = kaldsdag + 1;
+    }
+}
+console.log(kaldsdag);
 // Oppgave 24 (avansert)
 // const inventory = ["sverd", "drikk", "skjold", "drikk", "fiskestang", "drikk"];
 // a) Tell hvor mange "drikk" spilleren har.
 // b) Lag en ny array uten "drikk" ved å bruke en løkke og push.
 // Forventet: 3
 //            [ 'sverd', 'skjold', 'fiskestang' ]
+const inventory = ["sverd", "drikk", "skjold", "drikk", "fiskestang", "drikk"];
+let inventory1 = [];
+let drikkSTK = 0;
+let drikke = [];
+for (let i = 0; i < inventory.length; i++){
+    if (inventory[i] == "drikk"){
+        drikkSTK = drikkSTK + 1;
+    }
+    else{
+        inventory1.push(inventory[i]);
+    }
 
+}
+console.log(drikkSTK);
+for (let i = 0; i < drikkSTK; i++){
+    drikke.push("drikk");
+    
+}
 
+console.log(inventory1);
+console.log(drikke);
 // Oppgave 25 (avansert)
 // inventory er const, men push virker likevel. Hvorfor?
 // Skriv svaret i oppgavearket.
 // Forventet: ingenting i konsollen
+// vi har alle tinger på sekken,
