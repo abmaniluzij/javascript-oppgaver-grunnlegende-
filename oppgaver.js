@@ -372,3 +372,4 @@ console.log(drikke);
 // Skriv svaret i oppgavearket.
 // Forventet: ingenting i konsollen
 // vi har alle tinger på sekken,
+//Vi har fremdeles alle tingene i inventaret. Vi sletter ingenting og endrer ingenting. Vi bare skriver av denne listen på nytt.
